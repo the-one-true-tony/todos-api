@@ -22,7 +22,7 @@ RSpec.describe 'Todos API', type: :request do
 
   describe 'GET /todos/:id' do
 
-    before { get "todos/#{todo_id}" }
+    before { get "/todos/#{todo_id}" }
 
     context 'when the record exits' do
       it 'returns the todo' do
